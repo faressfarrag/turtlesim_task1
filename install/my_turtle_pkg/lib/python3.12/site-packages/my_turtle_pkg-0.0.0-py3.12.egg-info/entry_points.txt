@@ -1,0 +1,2 @@
+[console_scripts]
+turtle_autonomy = my_turtle_pkg.turtle_autonomy:main

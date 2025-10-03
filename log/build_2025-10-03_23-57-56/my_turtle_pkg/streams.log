@@ -1,0 +1,39 @@
+[4.828s] Invoking command in '/home/faress-farrag/ros2_ws/src/my_turtle_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/faress-farrag/ros2_ws/build/my_turtle_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_turtle_pkg build --build-base /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build install --record /home/faress-farrag/ros2_ws/build/my_turtle_pkg/install.log --single-version-externally-managed install_data
+[5.015s] running egg_info
+[5.015s] creating ../../build/my_turtle_pkg/my_turtle_pkg.egg-info
+[5.029s] writing ../../build/my_turtle_pkg/my_turtle_pkg.egg-info/PKG-INFO
+[5.029s] writing dependency_links to ../../build/my_turtle_pkg/my_turtle_pkg.egg-info/dependency_links.txt
+[5.029s] writing entry points to ../../build/my_turtle_pkg/my_turtle_pkg.egg-info/entry_points.txt
+[5.029s] writing requirements to ../../build/my_turtle_pkg/my_turtle_pkg.egg-info/requires.txt
+[5.029s] writing top-level names to ../../build/my_turtle_pkg/my_turtle_pkg.egg-info/top_level.txt
+[5.029s] writing manifest file '../../build/my_turtle_pkg/my_turtle_pkg.egg-info/SOURCES.txt'
+[5.056s] reading manifest file '../../build/my_turtle_pkg/my_turtle_pkg.egg-info/SOURCES.txt'
+[5.057s] writing manifest file '../../build/my_turtle_pkg/my_turtle_pkg.egg-info/SOURCES.txt'
+[5.057s] running build
+[5.057s] running build_py
+[5.057s] creating /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build
+[5.057s] creating /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build/lib
+[5.057s] creating /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build/lib/my_turtle_pkg
+[5.057s] copying my_turtle_pkg/turtle_autonomy.py -> /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build/lib/my_turtle_pkg
+[5.057s] copying my_turtle_pkg/__init__.py -> /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build/lib/my_turtle_pkg
+[5.057s] running install
+[5.063s] running install_lib
+[5.076s] creating /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages/my_turtle_pkg
+[5.076s] copying /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build/lib/my_turtle_pkg/turtle_autonomy.py -> /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages/my_turtle_pkg
+[5.076s] copying /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build/lib/my_turtle_pkg/__init__.py -> /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages/my_turtle_pkg
+[5.076s] byte-compiling /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages/my_turtle_pkg/turtle_autonomy.py to turtle_autonomy.cpython-312.pyc
+[5.077s] byte-compiling /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages/my_turtle_pkg/__init__.py to __init__.cpython-312.pyc
+[5.077s] running install_data
+[5.077s] creating /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/ament_index
+[5.078s] creating /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/ament_index/resource_index
+[5.078s] creating /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/ament_index/resource_index/packages
+[5.078s] copying resource/my_turtle_pkg -> /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/ament_index/resource_index/packages
+[5.078s] copying package.xml -> /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/my_turtle_pkg
+[5.078s] creating /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/my_turtle_pkg/launch
+[5.078s] copying launch/turtle_autonomy_launch.py -> /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/my_turtle_pkg/launch
+[5.078s] running install_egg_info
+[5.094s] Copying ../../build/my_turtle_pkg/my_turtle_pkg.egg-info to /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages/my_turtle_pkg-0.0.0-py3.12.egg-info
+[5.094s] running install_scripts
+[5.187s] Installing turtle_autonomy script to /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/my_turtle_pkg
+[5.187s] writing list of installed files to '/home/faress-farrag/ros2_ws/build/my_turtle_pkg/install.log'
+[5.209s] Invoked command in '/home/faress-farrag/ros2_ws/src/my_turtle_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/faress-farrag/ros2_ws/build/my_turtle_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_turtle_pkg build --build-base /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build install --record /home/faress-farrag/ros2_ws/build/my_turtle_pkg/install.log --single-version-externally-managed install_data

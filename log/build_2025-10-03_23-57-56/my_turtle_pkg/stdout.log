@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/my_turtle_pkg/my_turtle_pkg.egg-info
+writing ../../build/my_turtle_pkg/my_turtle_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_turtle_pkg/my_turtle_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/my_turtle_pkg/my_turtle_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/my_turtle_pkg/my_turtle_pkg.egg-info/requires.txt
+writing top-level names to ../../build/my_turtle_pkg/my_turtle_pkg.egg-info/top_level.txt
+writing manifest file '../../build/my_turtle_pkg/my_turtle_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/my_turtle_pkg/my_turtle_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_turtle_pkg/my_turtle_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build
+creating /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build/lib
+creating /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build/lib/my_turtle_pkg
+copying my_turtle_pkg/turtle_autonomy.py -> /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build/lib/my_turtle_pkg
+copying my_turtle_pkg/__init__.py -> /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build/lib/my_turtle_pkg
+running install
+running install_lib
+creating /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages/my_turtle_pkg
+copying /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build/lib/my_turtle_pkg/turtle_autonomy.py -> /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages/my_turtle_pkg
+copying /home/faress-farrag/ros2_ws/build/my_turtle_pkg/build/lib/my_turtle_pkg/__init__.py -> /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages/my_turtle_pkg
+byte-compiling /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages/my_turtle_pkg/turtle_autonomy.py to turtle_autonomy.cpython-312.pyc
+byte-compiling /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages/my_turtle_pkg/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/ament_index
+creating /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/ament_index/resource_index
+creating /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/ament_index/resource_index/packages
+copying resource/my_turtle_pkg -> /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/my_turtle_pkg
+creating /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/my_turtle_pkg/launch
+copying launch/turtle_autonomy_launch.py -> /home/faress-farrag/ros2_ws/install/my_turtle_pkg/share/my_turtle_pkg/launch
+running install_egg_info
+Copying ../../build/my_turtle_pkg/my_turtle_pkg.egg-info to /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/python3.12/site-packages/my_turtle_pkg-0.0.0-py3.12.egg-info
+running install_scripts
+Installing turtle_autonomy script to /home/faress-farrag/ros2_ws/install/my_turtle_pkg/lib/my_turtle_pkg
+writing list of installed files to '/home/faress-farrag/ros2_ws/build/my_turtle_pkg/install.log'
