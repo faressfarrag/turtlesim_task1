@@ -24,28 +24,74 @@ origin `(0,0)`.
 
 ------------------------------------------------------------------------
 
-## 🚀 Setup Steps
+## 🚀 Full Step-by-Step Instructions
 
-### 1. Create Workspace
+### 1. Create a ROS2 Workspace
 
 ``` bash
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws
 ```
 
-### 2. Create Package
+### 2. Create the Package
 
 ``` bash
 ros2 pkg create --build-type ament_python my_turtle_pkg
 ```
 
-### 3. Add Files
+This will generate the basic package structure.
 
--   Add `turtle_autonomy.py` inside `my_turtle_pkg/`
--   Add `turtle_autonomy_launch.py` inside `launch/`
--   Update `setup.py` and `package.xml` correctly
+------------------------------------------------------------------------
 
-### 4. Build Package
+### 3. Add Source Code
+
+-   Inside `my_turtle_pkg/my_turtle_pkg/`, create a file named
+    `turtle_autonomy.py` with the node code.
+-   Inside `my_turtle_pkg/launch/`, create `turtle_autonomy_launch.py`
+    to launch the node.
+
+------------------------------------------------------------------------
+
+### 4. Update `setup.py`
+
+Make sure `setup.py` includes:
+
+``` python
+import os
+from setuptools import setup
+
+package_name = 'my_turtle_pkg'
+
+setup(
+    name=package_name,
+    version='0.0.0',
+    packages=[package_name],
+    data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
+        ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'), ['launch/turtle_autonomy_launch.py']),
+    ],
+    install_requires=['setuptools'],
+    zip_safe=True,
+    maintainer='your_name',
+    maintainer_email='your_email@example.com',
+    description='Autonomous turtle in turtlesim',
+    license='Apache License 2.0',
+    entry_points={
+        'console_scripts': [
+            'turtle_autonomy = my_turtle_pkg.turtle_autonomy:main',
+        ],
+    },
+)
+```
+
+> **Note**: Initially, we forgot `import os`, which caused a build
+> error.
+
+------------------------------------------------------------------------
+
+### 5. Build the Package
 
 ``` bash
 cd ~/ros2_ws
@@ -53,7 +99,9 @@ colcon build --packages-select my_turtle_pkg
 source install/setup.bash
 ```
 
-### 5. Run
+------------------------------------------------------------------------
+
+### 6. Run the Nodes
 
 Open **two terminals**:
 
@@ -73,9 +121,9 @@ ros2 run my_turtle_pkg turtle_autonomy
 
 ## 🎮 Controls
 
--   By default, the turtle **wanders around** without hitting walls.\
--   Press **Space bar** → the turtle drives back to **(0,0)**, then
-    resumes wandering.
+-   By default, the turtle **wanders around** avoiding walls.\
+-   Press **Space bar** → the turtle drives back to **(0,0)**.\
+-   After reaching origin → it resumes wandering.
 
 ------------------------------------------------------------------------
 
